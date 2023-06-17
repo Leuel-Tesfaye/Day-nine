@@ -25,9 +25,24 @@ const countries2 = [
     'ALBANIA',
     'ETHIOPIA',
     'KENYA',
-    'EGYPT'
+    'EGYPT',
+    'FINLAND',
+    'ENGLAND'
 ]
 const lower = countries.map((lowerCase) => {
     return lowerCase.toLowerCase() 
 })
 console.log(lower)
+
+// filter : this method filter out items which full fill filtering conditions and return a new array 
+// filter countries containing land
+const containsLand = countries2.filter((countryLand) =>{
+    return countryLand.includes('LAND')
+})
+console.log(containsLand)
+
+//filter countries with 5 letters 
+const countriesWithFiveLetter = countries2.filter((letter) =>{
+    return letter.length === 5
+})
+console.log(countriesWithFiveLetter)
