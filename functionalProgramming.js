@@ -19,3 +19,12 @@ const names = ['paul','prince', 'Jordan', 'Hope']
 const upperCase = names.map((name) => name.toUpperCase())
     console.log(upperCase)
 
+const countries2 = [
+    'ALBANIA',
+    'ETHIOPIA',
+    'KENYA',
+    'EGYPT'
+]
+
+const oneWord = countries2.map((word) => word.toLowerCase())
+console.log(oneWord)
