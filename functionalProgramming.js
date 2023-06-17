@@ -4,8 +4,10 @@
 // it takes  a callback function with elements, index parameter and array itself.
 let sum = 0
 const num = [1,2,3,4,5,6]
-num.forEach((num) => sum += num)
-console.log(sum) 
+num.forEach((num) => {
+    return sum += num
+})
+console.log(sum)
 
 const countries = ['Finland','Denmark','Sweden','Norway']
 countries.forEach(element => console.log(element.toUpperCase()))
@@ -25,6 +27,7 @@ const countries2 = [
     'KENYA',
     'EGYPT'
 ]
-
-const oneWord = countries2.map((word) => word.toLowerCase())
-console.log(oneWord)
+const lower = countries.map((lowerCase) => {
+    return lowerCase.toLowerCase() 
+})
+console.log(lower)
