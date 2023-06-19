@@ -37,4 +37,9 @@ console.log(prices)
 const land = countries.filter((land) => land.includes('land'))
 console.log(land)
 
-//5 . 
+// 4.1 Use filter to filter out only prices with values.
+const value = products.filter((value) => value.price !==' ' && value.price !== '')
+console.log(value)
+
+
+
