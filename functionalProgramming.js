@@ -36,8 +36,8 @@ console.log(lower)
 
 // filter : this method filter out items which full fill filtering conditions and return a new array 
 // filter countries containing land
-const containsLand = countries2.filter((countryLand) =>{
-    return countryLand.includes('LAND')
+const containsLand = countries2.filter((endLand) => {
+        return endLand.includes('LAND')
 })
 console.log(containsLand)
 
@@ -46,3 +46,37 @@ const countriesWithFiveLetter = countries2.filter((letter) =>{
     return letter.length === 5
 })
 console.log(countriesWithFiveLetter)
+
+// reduce : takes the callback function takes accumulator, current, and optional initial value as a parameter and returns a single value.
+const numbers3 = [1, 2, 3, 4, 5]
+const sum2 = numbers3.reduce((acc, cur) => acc + cur, 0)
+
+console.log(sum2)
+
+//every : check if all the elements are similar in one aspect. it returns boolean value
+const bool = [true, true, true, true]
+const areAllTrue = bool.every((b) => b === true) // Are all true? 
+
+console.log(areAllTrue) // true
+
+// find : returns the first element that satisfies the condition 
+const ages = [24, 23, 18, 45 , 56]
+const findAge = ages.find((ages) => ages < 24)
+console.log(findAge)
+
+// findIndex : returns the position(index) of the first element that satisfies the condition 
+const fruits = ['orange', 'apple', 'banana', 'pineapple']
+const fruitType = fruits.findIndex((fruit) => fruit.length > 7)
+console.log(fruitType)
+
+// some : check if some of the elements are similar in one aspect. it returns boolean 
+const Countries = ['England', 'Finland','Ireland',]
+const check = Countries.some((check) => check.includes('land'))
+console.log(check)
+
+// sort : the sort method arranges the array elements either ascending or descending order. sort method arranges the original array. 
+// sorting string values 
+const products = ['Milk', 'Coffee', 'Sugar', 'Honey', 'Apple', 'Carrot']
+const arrange = products.sort()
+console.log(`sorted array values ${arrange}`)
+
