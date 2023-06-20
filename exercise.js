@@ -39,7 +39,21 @@ console.log(land)
 
 // 4.1 Use filter to filter out only prices with values.
 const value = products.filter((value) => value.price !==' ' && value.price !== '')
-console.log(value)
+console.log(value) 
+
+// 5.1 use find to find the first country containing only six letters in the countries array 
+
+const six = countries.find((six) => six.length === 6 )
+console.log(six)
+// 5.2 use findIndex to find the position of the first country containing only six letters in the countries array 
+const firstCountry = countries.findIndex((country) => country.length === 6)
+console.log(firstCountry)
+
+//5.2 use findIndex to find the position of russia if it doesn't exist in the array you will get -1 
+const russia = countries.findIndex((russia) => russia.includes('russia'))
+console.log(russia)
+
+// exercise level 2 
 
 
 
