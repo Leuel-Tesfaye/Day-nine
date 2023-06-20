@@ -70,8 +70,10 @@ const sum = products.reduce((acc, item) => {
 console.log(sum)
 
 //3. Declare a function called categorizeCountries which returns an array of countries which have some common pattern(you find the countries array in this repository as countries.js(eg 'land', 'ia', 'island','stan')).
-const categorizeCountries = () =>{
-   const countriesWithLand = countries.some((countriesWithLand) => countriesWithLand.includes('land'))
-   console.log(countriesWithLand)
+const categorizeCountries = (countries,pattern,pattern2) =>{
+   return countries.filter((country) => country.includes(pattern,pattern2))
 }
-categorizeCountries() 
+const result = categorizeCountries(countries,'land') 
+console.log(result)
+
+// 4. 
