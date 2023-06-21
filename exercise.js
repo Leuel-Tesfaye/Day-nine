@@ -76,4 +76,16 @@ const categorizeCountries = (countries,pattern,pattern2) =>{
 const result = categorizeCountries(countries,'land') 
 console.log(result)
 
-// 4. 
+//4 . Declare a getFirstTenCountries function and return an array of ten countries. Use different functional programming to work on the countries.js array
+let countries2 = ['Afghanistan', 'Albania', 'Algeria', 'Andorra', 'Angola', 'Antigua and Barbuda', 'Argentina', 'Armenia', 'Australia', 'Austria', 'Azerbaijan'];
+const getFirstTenCountries = (countries) => {
+    return countries2.slice(0,10)
+}
+console.log(getFirstTenCountries(countries))
+
+//5. Declare a getLastTenCountries function which returns the last ten countries in the countries array.
+const getLastFiveCountries = () =>{
+   return countries2.slice(-5)
+}
+console.log(getLastFiveCountries())
+
